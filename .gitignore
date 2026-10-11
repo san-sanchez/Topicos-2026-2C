@@ -1,0 +1,10 @@
+# Archivos de configuración del IDE
+STRING/*.depend
+STRING/*.layout
+
+# Archivos generados al compilar
+STRING/bin/
+STRING/obj/
+
+# Archivos objeto de C
+*.o

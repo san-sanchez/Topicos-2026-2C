@@ -75,18 +75,31 @@ char *my_strrchr(char *s, int c)
 }
 char *my_strstr(const char *s1, const char *s2)
 {
-    char *aux = s2;
+    char *ptr;
+    char *reset = s2;
     while(*s1++)
     {
-        while(*s1==*aux++);
-        if(*aux)
+        if(*s1==*s2)
         {
-            aux = s2;
+            ptr = s1;
+           while(*s2 && (*s1==*s2))
+           {
+               s2++;
+               s1++;
+               if(*s2=='\0')
+               {
+                   return ptr;
+               }
+           }
         }
-        else
-        {
-            return s1;
-        }
+        s2=reset;
     }
+    return NULL;
+}
+char *my_strstrV2(const char *s1, const char *s2)
+{
+    unsigned tam = my_strlen(s2);
+    while(*s1 && my_strncmp(s1,s2,tam)) s1++;
+    return *s1? (char*)s1:NULL;
 }
 char *my_strtok(char *s1, const char *s2);
