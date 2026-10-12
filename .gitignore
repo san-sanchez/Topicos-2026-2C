@@ -1,10 +1,12 @@
 # Archivos de configuración del IDE
 STRING/*.depend
 STRING/*.layout
-
+Matrices/*.depend
+Matrices/*.layout
 # Archivos generados al compilar
 STRING/bin/
 STRING/obj/
-
+#ejecutable de proyecto
+Matrices/bin/Debug/Matrices.exe
 # Archivos objeto de C
 *.o
