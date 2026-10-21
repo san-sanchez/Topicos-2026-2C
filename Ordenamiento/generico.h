@@ -1,0 +1,6 @@
+#ifndef GENERICO_H_INCLUDED
+#define GENERICO_H_INCLUDED
+
+
+
+#endif // GENERICO_H_INCLUDED
