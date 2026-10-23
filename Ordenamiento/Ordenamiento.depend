@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\admin\desktop\topicos\ordenamiento\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1792715608 source:c:\users\admin\desktop\topicos\ordenamiento\generico.c
+	"generico.h"
+
+1792715626 c:\users\admin\desktop\topicos\ordenamiento\generico.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
